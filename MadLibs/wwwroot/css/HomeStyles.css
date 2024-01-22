@@ -3,7 +3,73 @@ body {
   font-family: 'Roboto', sans-serif;
   text-align: center;
 }
-
+h1 {
+  font-size: 50px;
+  color: white;
+}
+h2 {
+  font-size: 30px;
+  color: white;
+}
 .welcome {  
   font-size: 16px;  
+}
+
+button {
+  border-radius: 5px;
+  background-color: rgb(235, 243, 249);
+
+ 
+}
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+button:hover {
+  background-color: rgb(78, 78, 179);
+  color: white;
+
+}
+form{
+  margin: 0 auto;
+  width: 50%;
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+  background-color: rgb(93, 176, 231);
+}
+input {
+  margin-bottom: 1em;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  border: 1px solid #CCC;
+}
+input:focus {
+  outline: 3px solid #999;
+}
+
+.formInputColumns {
+  display: flex;
+  flex-direction: left;
+  justify-content: space-evenly;
+
+}
+
+.inputColumn {
+  float: right;
+  text-align: right;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slide-in-right {
+  animation: slideInRight 0.5s ease-in-out;
 }
