@@ -1,6 +1,6 @@
 namespace MadLibs.Models
 {
-  public class FormVariables
+  public class FormVariable
   {
     public string Name1 { get; set; }
     public string Number1 { get; set; }
