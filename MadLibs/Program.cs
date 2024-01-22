@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace FriendLetter
+namespace MadLibs
 {
   class Program
   {
@@ -14,7 +14,7 @@ namespace FriendLetter
       WebApplication app = builder.Build();
 
       app.UseHttpsRedirection();
-
+      app.UseStaticFiles();
       app.UseRouting();
 
       app.MapControllerRoute(
