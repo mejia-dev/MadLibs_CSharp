@@ -6,5 +6,7 @@ namespace MadLibs.Controllers
   {
     [Route("/")]
     public ActionResult Form() { return View(); }
+    [Route("MadLib")]
+    public ActionResult MadLib() { return View(); }
   }
 }
